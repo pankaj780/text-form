@@ -1,27 +1,27 @@
 import React,{useState} from 'react'
 
 function About(props) {
-   const [myStyle,setMyStyle]=useState({
-    color:'black',
-    backgroundColor:'white'
- });
+//    const [myStyle,setMyStyle]=useState({
+//     color:'black',
+//     backgroundColor:'white'
+//  });
 
-  const handleOnchange=()=>{
-    if(myStyle.color==='white')
-    {
-      setMyStyle({
-        color:'black',
-        backgroundColor:'white'
-      })
-    }
+  // const handleOnchange=()=>{
+  //   if(myStyle.color==='white')
+  //   {
+  //     setMyStyle({
+  //       color:'black',
+  //       backgroundColor:'white'
+  //     })
+  //   }
 
-    if(myStyle.color==='black'){
-      setMyStyle({
-        color:'white',
-        backgroundColor:'black'
-      })
-    }
-  }
+  //   if(myStyle.color==='black'){
+  //     setMyStyle({
+  //       color:'white',
+  //       backgroundColor:'black'
+  //     })
+  //   }
+  // }
   return (
     <div className={`container my-3 bg-${props.mode}`}>
       <div className="accordion accordion-flush" id="accordionFlushExample">
@@ -33,8 +33,7 @@ function About(props) {
               data-bs-toggle="collapse"
               data-bs-target="#flush-collapseOne"
               aria-expanded="false"
-              aria-controls="flush-collapseOne"
-              style={myStyle}>
+              aria-controls="flush-collapseOne">
               Accordion Item #1
             </button>
           </h2>
@@ -59,8 +58,7 @@ function About(props) {
               data-bs-toggle="collapse"
               data-bs-target="#flush-collapseTwo"
               aria-expanded="false"
-              aria-controls="flush-collapseTwo"
-              style={myStyle}>
+              aria-controls="flush-collapseTwo">
               Accordion Item #2
             </button>
           </h2>
@@ -86,8 +84,7 @@ function About(props) {
               data-bs-toggle="collapse"
               data-bs-target="#flush-collapseThree"
               aria-expanded="false"
-              aria-controls="flush-collapseThree"
-              style={myStyle}>
+              aria-controls="flush-collapseThree">
               Accordion Item #3
             </button>
           </h2>
