@@ -3,7 +3,7 @@ import React,{useState} from 'react';
 import About from './components/About';
 import Navbar from './components/Navbar';
 import Alert from './components/Alert';
-//import TextForm from './components/TextForm';
+import TextForm from './components/TextForm';
 
 function App() {
   const[mode, setMode]=useState('light');
@@ -23,6 +23,8 @@ function App() {
     {
       setMode('dark');
       showAlert('Drak mode enabled','success');
+      document.body.style.backgroundColor="#212529"
+      document.body.style.color="white"
     }
 
     if(mode==='dark'){
@@ -34,7 +36,7 @@ function App() {
     <>
      <Navbar mode={mode} toggleMode={handleOnchange}/>
      <Alert alert={alert}/>
-     {/* <TextForm title={'Type Here:'}/> */}
+     <TextForm title={'Type Here:'}/> 
      <About mode={mode}/>
     </>
   );

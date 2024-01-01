@@ -1,30 +1,10 @@
 import React,{useState} from 'react'
 
 function About(props) {
-//    const [myStyle,setMyStyle]=useState({
-//     color:'black',
-//     backgroundColor:'white'
-//  });
 
-  // const handleOnchange=()=>{
-  //   if(myStyle.color==='white')
-  //   {
-  //     setMyStyle({
-  //       color:'black',
-  //       backgroundColor:'white'
-  //     })
-  //   }
-
-  //   if(myStyle.color==='black'){
-  //     setMyStyle({
-  //       color:'white',
-  //       backgroundColor:'black'
-  //     })
-  //   }
-  // }
   return (
     <div className={`container my-3 bg-${props.mode}`}>
-      <div className="accordion accordion-flush" id="accordionFlushExample">
+      <div className={`accordion accordion-flush bg-${props.mode}`} id="accordionFlushExample">
         <div className={`accordion-item bg-${props.mode}`}>
           <h2 className="accordion-header" id="flush-headingOne">
             <button
