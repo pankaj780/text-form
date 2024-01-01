@@ -30,6 +30,8 @@ function App() {
     if(mode==='dark'){
       setMode('light');
       showAlert('Drak mode disabled','success');
+      document.body.style.backgroundColor="#fff"
+      document.body.style.color="dark"
     }
   }
   return (
